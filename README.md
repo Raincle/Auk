@@ -2,7 +2,7 @@
 
 ## 1.安装Tampermonkey
 
-### 登录http://tampermonkey.net，下载并安装
+### 访问 http://tampermonkey.net 下载并安装
 ### 安装完成后，将在浏览器顶部看到Tampermonkey的图标
 
 ## 2.安装脚本
