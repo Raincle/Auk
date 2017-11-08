@@ -9,7 +9,7 @@
 <img src='https://raw.githubusercontent.com/Raincle/Auk/master/imgs/install.png' width='600' alt='下载'>
 
 * 安装完成后，将在浏览器顶部或右上角看到Tampermonkey的图标
-<img src='https://raw.githubusercontent.com/Raincle/Auk/master/imgs/top.png' width='600' alt='顶部'>
+<img src='https://raw.githubusercontent.com/Raincle/Auk/master/imgs/icon.png' width='600' alt='顶部图标'>
 <img src='https://raw.githubusercontent.com/Raincle/Auk/master/imgs/blank.png' width='600' alt='blank'>
 
 ## 2.安装脚本
