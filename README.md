@@ -32,6 +32,6 @@
 
 ## 3.使用
 
-* 登入环信坐席端，刷新页面即可使用
+* 登入环信坐席端，**刷新**页面即可使用
 
 <img src='https://raw.githubusercontent.com/Raincle/Auk/master/imgs/done.png' width='600' alt='blank'>
