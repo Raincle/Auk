@@ -5,7 +5,8 @@
 ## 1.安装Tampermonkey
 
 * 访问 [Tampermonkey](http://tampermonkey.net) 下载并安装
-![下载](https://raw.githubusercontent.com/Raincle/Auk/master/imgs/install.png)
+<img src='https://raw.githubusercontent.com/Raincle/Auk/master/imgs/install.png' width='600' alt='下载'>
+
 * 安装完成后，将在浏览器顶部看到Tampermonkey的图标
 ![顶部](https://raw.githubusercontent.com/Raincle/Auk/master/imgs/top.png)
 
