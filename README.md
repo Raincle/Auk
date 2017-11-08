@@ -19,7 +19,7 @@
 * 在弹出的新页面中，选择“实用工具”
 <img src='https://raw.githubusercontent.com/Raincle/Auk/master/imgs/utils.png' width='600' alt='实用工具'>
 * 页面底部可以看到填写URL的输入框，输入下面这行URL，并点击导入
-* `https://raw.githubusercontent.com/Raincle/Auk/master/auk.js` 
+`https://raw.githubusercontent.com/Raincle/Auk/master/auk.js` 
 <img src='https://raw.githubusercontent.com/Raincle/Auk/master/imgs/import.png' width='600' alt='导入'>
 * 在弹出的页面中，选择“安装”，瞬间即可完成
 <img src='https://raw.githubusercontent.com/Raincle/Auk/master/imgs/installAuk.png' width='600' alt='安装'>
