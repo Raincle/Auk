@@ -8,7 +8,7 @@
 <img src='https://raw.githubusercontent.com/Raincle/Auk/master/imgs/install.png' width='600' alt='下载'>
 
 * 安装完成后，将在浏览器顶部看到Tampermonkey的图标
-![顶部](https://raw.githubusercontent.com/Raincle/Auk/master/imgs/top.png)
+<img src='https://raw.githubusercontent.com/Raincle/Auk/master/imgs/top.png' width='600' alt='顶部'>
 
 ## 2.安装脚本
 
