@@ -16,6 +16,7 @@
 * 页面底部可以看到填写URL的输入框，输入下面这行URL，并点击导入
 * `https://raw.githubusercontent.com/Raincle/Auk/master/auk.js` 
 * 在弹出的页面中，选择“安装”，瞬间即可完成
+<img src='https://raw.githubusercontent.com/Raincle/Auk/master/imgs/blank.png' width='600' alt='顶部'>
 
 ## 3.使用
 
