@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  Mark.
 // @author       Hong
-// @match        https://kefu.easemob.com/mo/agent/webapp/chat
+// @match        https://kefu.easemob.com/mo/agent/webapp/*
 // @grant        none
 // ==/UserScript==
 
