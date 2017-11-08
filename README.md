@@ -34,4 +34,4 @@
 
 * 登入环信坐席端，**刷新**页面即可使用
 
-<img src='https://raw.githubusercontent.com/Raincle/Auk/master/imgs/done.png' width='600' alt='blank'>
+<img src='https://raw.githubusercontent.com/Raincle/Auk/master/imgs/users.png' width='600' alt='blank'>
