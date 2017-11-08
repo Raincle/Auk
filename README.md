@@ -3,6 +3,7 @@
 ## 1.安装Tampermonkey
 
 ### 访问 http://tampermonkey.net 下载并安装
+![下载](https://raw.githubusercontent.com/Raincle/Auk/master/imgs/install.png)
 ### 安装完成后，将在浏览器顶部看到Tampermonkey的图标
 
 ## 2.安装脚本
