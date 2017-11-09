@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Auk
+// @name         Yit Stars
 // @namespace    http://tampermonkey.net/
 // @version      0.2
-// @description  Mark Users In Yit Service.
+// @description  Stars In Yit Service.
 // @author       Hong
 // @match        https://kefu.easemob.com/mo/agent/webapp/*
 // @grant        none
