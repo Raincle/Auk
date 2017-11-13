@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         Yit Stars
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.3
 // @description  Stars In Yit Service.
 // @author       Hong
-// @match        https://kefu.easemob.com/mo/agent/webapp/*
+// @match        https://kefu.easemob.com/mo/*
 // @grant        none
 // ==/UserScript==
 
@@ -186,7 +186,7 @@ var YitUsers = [
             }, 1000);
 
             // 点击面板重新安装
-            $("[sign='webapp/chat'], [sign='webapp/myhistory']").click(function() {
+            $("[sign='webapp/chat'], [sign='webapp/myhistory'], .backgrid-paginator").click(function() {
                 // 监听是否加载完毕;
                 var historyLoadingInterval = setInterval(function(){
                     var isLoadingEnd = $(".article-agent .ui-cmp-loading")[0].style.display == "none" ? true : false;
