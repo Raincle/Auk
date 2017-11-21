@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Yit Stars
 // @namespace    http://tampermonkey.net/
-// @version      0.4
+// @version      0.5
 // @description  Stars In Yit Service.
 // @author       Hong
 // @match        https://kefu.easemob.com/mo/*
@@ -110,11 +110,8 @@ var YitUsers = [
                         }
                         visitorsID = vIds;
                         
-                        // 会话最大接入数为70，当达到这个数量的时候执行
-                        if (visitors.length >= 70) {
-                          dispatchData();
-                          reinstallMarker();
-                        }
+                        dispatchData();
+                        reinstallMarker();
                         
                     }
                     if (url.indexOf("ServiceSessionHistorys?") > -1) {
