@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Yit Stars
 // @namespace    http://tampermonkey.net/
-// @version      0.5
+// @version      0.6
 // @description  Stars In Yit Service.
 // @author       Hong
 // @match        https://kefu.easemob.com/mo/*
@@ -110,8 +110,16 @@ var YitUsers = [
                         }
                         visitorsID = vIds;
                         
-                        dispatchData();
-                        reinstallMarker();
+                        var updateCnt = 0;
+                        var updateintervalid = setInterval(function() {
+                          updateCnt += 1;
+                          dispatchData();
+                          reinstallMarker();
+                          if (updateCnt >= 3) {
+                            clearInterval(updateintervalid);
+                          }
+                        }, 300);
+                        
                         
                     }
                     if (url.indexOf("ServiceSessionHistorys?") > -1) {
