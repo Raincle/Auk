@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Yit Mark TransferredFromRobot
 // @namespace    http://tampermonkey.net/
-// @version      0.1.3
+// @version      0.2
 // @description  Mark Sessions TransferredFromRobot
 // @author       Hong
 // @match        https://kefu.easemob.com/mo/*
