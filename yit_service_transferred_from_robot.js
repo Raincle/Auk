@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Yit Mark TransferredFromRobot
 // @namespace    http://tampermonkey.net/
-// @version      0.1.2
+// @version      0.1.3
 // @description  Mark Sessions TransferredFromRobot
 // @author       Hong
 // @match        https://kefu.easemob.com/mo/*
@@ -102,7 +102,7 @@
                             $(".em-chat-itm-visitor").each(function(i) {
                                 var isTansferredFromRobot = visitors[i].transferedFrom === 'Robot';
                                 if (isTansferredFromRobot) {
-                                  $(this)[0].css("bacgroundColor", "red");
+                                  $(this)[0].style.bacgroundColor = "red";
                                 }
                             });
                           }
