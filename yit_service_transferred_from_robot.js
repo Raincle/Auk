@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Yit Mark TransferredFromRobot
 // @namespace    http://tampermonkey.net/
-// @version      0.1
-// @description  try to take over the world!
+// @version      0.1.1
+// @description  Mark Sessions TransferredFromRobot
 // @author       Hong
 // @match        https://kefu.easemob.com/mo/*
 // @grant        none
@@ -92,7 +92,26 @@
                     //do something
                     if (url.indexOf("Visitors?") > -1) {
                         var visitors = JSON.parse(xhr.response);
-                        console.log(visitors);
+
+                        var updateCnt = 0;
+                        var updateintervalid = setInterval(function() {
+                          updateCnt += 1;
+                          
+                          var visitorDoms = $(".em-chat-itm-visitor");
+                          if (visitorDoms.length > 0) {
+                            $(".em-chat-itm-visitor").each(function(i) {
+                                var isTansferredFromRobot = visitors[i].transferedFrom === 'Robot';
+                                if (isTansferredFromRobot) {
+                                  $(this).css("bacgroundColor", "red");
+                                }
+                            });
+                          }
+                          
+                          if (updateCnt >= 3) {
+                            clearInterval(updateintervalid);
+                          }
+                        }, 300);
+                        
                     }
                     break;
             }
