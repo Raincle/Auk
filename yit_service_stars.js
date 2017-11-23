@@ -113,6 +113,17 @@ var YitUsers = [
                         var updateCnt = 0;
                         var updateintervalid = setInterval(function() {
                           updateCnt += 1;
+                          
+                          var visitorDoms = $(".em-chat-itm-visitor");
+                          if (visitorDoms.length > 0) {
+                            $(".em-chat-itm-visitor").each(function(i) {
+                                var isTansferredFromRobot = visitors[i].transferedFrom === 'Robot';
+                                if (isTansferredFromRobot) {
+                                  $(this)[0].style.backgroundColor = "yellow";
+                                }
+                            });
+                          }
+                          
                           dispatchData();
                           reinstallMarker();
                           if (updateCnt >= 3) {
