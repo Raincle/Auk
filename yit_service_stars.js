@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Yit Stars
 // @namespace    http://tampermonkey.net/
-// @version      0.6
+// @version      0.7
 // @description  Stars In Yit Service.
 // @author       Hong
 // @match        https://kefu.easemob.com/mo/*
@@ -86,6 +86,7 @@ var YitUsers = [
 
     var visitorsID = [];
     var historyVisitorsID = [];
+    var robotHTML = "<div class='robot-mark' style='position:absolute;width:30px;height:30px;background-color:yellow;right:30px;bottom:30px'></div>";
     hookAjax({
         //hook callbacks
         onreadystatechange:function(xhr){
@@ -113,6 +114,18 @@ var YitUsers = [
                         var updateCnt = 0;
                         var updateintervalid = setInterval(function() {
                           updateCnt += 1;
+                          
+                          var visitorDoms = $(".em-chat-itm-visitor");
+                          if (visitorDoms.length > 0) {
+                            $(".em-chat-itm-visitor").each(function(i) {
+                                var isTansferredFromRobot = visitors[i].transferedFrom === 'Robot';
+                                if (isTansferredFromRobot) {
+                                  $(this).find(".robot-mark").remove();
+                                  $(this).append(robotHTML);
+                                }
+                            });
+                          }
+                          
                           dispatchData();
                           reinstallMarker();
                           if (updateCnt >= 3) {
